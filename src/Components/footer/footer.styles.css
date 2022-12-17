@@ -1,0 +1,22 @@
+.footer {
+  top: 100%;
+  margin-top: 10%;
+  width: 100vw;
+  z-index: 1000;
+
+}
+.footerImg {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footerContent {
+  letter-spacing: 2px;
+  font-weight: 600;
+  z-index: 1000;
+  text-align: center;
+  font-size: 2rem;
+}

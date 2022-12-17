@@ -1,0 +1,150 @@
+.write {
+  padding-top: 20px;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width:1000px) {
+    width: 100%;
+  }
+}
+
+.writeImg {
+  width: 70%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 40px;
+  @media screen and (max-width:1000px) {
+    width: 100%;
+    border-radius: 0;
+    object-fit: contain;
+  }
+}
+
+.writeForm {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width:1000px) {
+    width: 100%;
+  }
+}
+
+.writeFormGroup {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+
+  .photo-upload-container1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    input {
+      display: none;
+    }
+  }
+
+  input {
+    background-color: #121212;
+    border-style: solid;
+    font-size: 20px;
+    border-color: gray;
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-width: 0.5px;
+    color: white;
+
+    &:focus::-webkit-input-placeholder {
+      opacity: 0;
+    }
+
+    @media screen and (max-width:1000px) {
+      width: 90%;
+      height: 70px;
+      font-size: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+  }
+
+  @media screen and (max-width:1000px) {
+    flex-direction: column;
+    width: 100%;
+
+    .photo-upload-container1 {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      font-size: 20px;
+    }
+  }
+
+}
+
+.write-text-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  textarea {
+    background-color: #121212;
+    margin-top: 20px;
+    width: 90%;
+    min-height: 500px;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.write-btn-container {
+  margin-top: 20px;
+  display: flex;
+  width:100%;
+  justify-content: center;
+  padding-bottom: 50px;
+  .writeSubmitprivate {
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .writeSubmitpublic {
+    color: white;
+    background-color: lightcoral;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+.horizontal-line{
+  height: 1px;
+  width: 90%;
+  background-color: gray;
+}

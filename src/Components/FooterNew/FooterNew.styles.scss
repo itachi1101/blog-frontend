@@ -1,0 +1,29 @@
+.footer-new-container{
+    background-color: #121212;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 5rem;
+        font-style: italic;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        @media screen and (max-width:1000px) {
+         font-size: 4rem;  
+         text-align: center;        
+        }
+    }
+    h2{
+        font-style: italic;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+    span{
+        color:white;
+        font-size: 1.1rem;
+    }
+}

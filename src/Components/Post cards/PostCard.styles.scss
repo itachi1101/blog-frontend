@@ -1,0 +1,88 @@
+.post {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding:4px;
+    border-radius: 10px;
+    @media screen and (max-width:1000px) {
+        max-width: 90%;
+        justify-content: center;
+    }
+
+    .postImg {
+        width: 360px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 7px;
+
+        @media screen and (max-width:1000px) {
+            max-width: 100%;
+        }
+    }
+
+    .postInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .hr {
+            background-color: gray;
+            height: 0.5px;
+            width: 90%;
+        }
+
+        .postCat {
+            font-family: "Varela Round", Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            color: #be9656;
+            padding: 18px;
+            cursor: pointer;
+        }
+
+        .postTitle {
+            font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+            font-size: 26px;
+            font-weight: 900;
+            margin-top: 15px;
+            cursor: pointer;
+
+            @media screen and (max-width:1000px) {
+                font-size: 24px;
+            }
+        }
+
+        .postDate {
+            font-family: "Lora", serif;
+            font-style: italic;
+            font-size: 13px;
+            font-weight: 400;
+            color: #999999;
+            margin-top: 15px;
+
+            @media screen and (max-width:1000px) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .postDesc {
+        font-family: "Varela Round", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #444444;
+        margin-top: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        @media screen and (max-width:1000px) {
+            padding:2px;
+            text-align: center;
+        }
+    }
+}

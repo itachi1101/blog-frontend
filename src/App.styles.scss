@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  button {
+    cursor: pointer;
+  }
+  :root {
+    --hue-color: 243;
+    --first-color: hsl(var(--hue-color), 80%, 68%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --secondary-color: #121212;
+    --third-color: #5c5b5b;
+    --default-color: #fff;
+    // Font sizez
+    --big-font-size: 3.875rem;
+    --h1-font-size: 2.2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 1.1rem;
+    --small-font-size: 0.913rem;
+    --smaller-font-size: 0.85rem;
+    // Font weight
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    // Margin bottom
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+  }
+  
+  body {
+    max-width: 1500px;
+    margin:auto;
+    font-family: Roboto, sans-serif;
+  }
+  body::-webkit-scrollbar {
+    width: 0px; /* width of the entire scrollbar */
+  }

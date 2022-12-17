@@ -1,0 +1,177 @@
+.header-container {
+    background-color: #121212;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    @media screen and (max-width:1000px) {
+        padding: 5px;
+
+    }
+
+    .wrapper {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+
+        @media screen and (max-width:1000px) {
+            width: 100%;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .links-container {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            color: gray;
+            font-size: 1.4rem;
+            justify-content: space-around;
+            padding: 10px;
+
+            @media screen and (max-width:1000px) {
+                visibility: hidden;
+            }
+        }
+
+        .login-container {
+            color: gray;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                color: white;
+                cursor: pointer;
+            }
+
+            @media screen and (max-width:1000px) {
+                font-size: 1rem;
+            }
+        }
+
+        .photo-name-container {
+            display: flex;
+            align-items: center;
+            padding: 4px;
+            color: gray;
+            flex-direction: column-reverse;
+            margin-right: 10px;
+
+            @media screen and (max-width:1000px) {
+                justify-content: center;
+
+            }
+
+            .img-container {
+                width: 70px;
+                height: 70px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @media screen and (max-width:1000px) {
+                    margin-left: 0px;
+                    width: 60px;
+                    height: 60px;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+
+                }
+            }
+
+            span {
+                font-size: 1.2rem;
+                margin-top: 10px;
+
+                @media screen and (max-width:1000px) {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+        }
+
+        .login-container {
+            padding: 4px;
+            margin-left: -60px;
+
+            @media screen and (max-width:1000px) {
+                margin-left: 0px;
+            }
+
+            .link-style {
+                color: gray;
+                text-decoration: none;
+
+                &:hover {
+                    color: white;
+                }
+
+            }
+        }
+    }
+
+    .link-style {
+        color: gray;
+        text-decoration: none;
+
+
+        &:hover {
+            color: white;
+        }
+
+    }
+
+    .link-btn {
+        color: white;
+        text-decoration: none;
+        background-color: gray;
+        padding: 10px;
+        border-radius: 10px;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .link-btn1 {
+        color: white;
+        text-decoration: none;
+        background-color: gray;
+        padding: 10px;
+        border-radius: 10px;
+
+        &:hover {
+            color: white;
+        }
+
+        @media screen and (max-width:1000px) {
+            visibility: hidden;
+            display: none;
+        }
+    }
+}

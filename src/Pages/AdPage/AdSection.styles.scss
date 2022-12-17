@@ -1,0 +1,32 @@
+.ad-section-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2CB23;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .wrapper {
+        width: 100%;
+        height:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width:1000px) {
+            height:auto;  
+        }
+        img {
+            width: 80%;
+            height: 100%;
+            max-height: 900px;
+            object-fit: contain;
+            @media screen and (max-width:1000px) {
+                width:100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

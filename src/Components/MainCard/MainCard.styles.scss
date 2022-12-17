@@ -1,0 +1,62 @@
+.maincard-container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+
+
+    .image-container {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .date {
+        margin-top: 10px;
+        color: gray;
+        font-size: 1.1rem;
+        font-weight: bold;
+
+        @media screen and (max-width:1000px) {
+            font-size: 1rem;
+        }
+    }
+
+    .heading {
+        span {
+
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                color: goldenrod;
+            }
+
+            @media screen and (max-width:1000px) {
+                font-size: 1.5rem;
+                ;
+            }
+        }
+    }
+
+    Link {
+        &:hover {
+            color: goldenrod;
+        }
+    }
+
+    .text {
+        font-size: 1.3rem;
+        color: gray;
+        display: block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 4.6em;
+    }
+}
